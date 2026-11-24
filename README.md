@@ -26,6 +26,8 @@ build de novo, a imagem entra sozinha.
 
 ## Antes de publicar
 
+- **Página provisória no ar (desde 2026-11-24):** o `index.html` da raiz é a página "site em construção", feita à mão (fora do build). A home de verdade sai em `inicio/` (fonte `_src/pages/inicio.html`). Para lançar: no cabeçalho de `inicio.html` trocar `"path":"inicio/"` por `"path":""`; no `_src/layout.mjs` e em `obrigado.html` trocar `{{root}}inicio/` por `{{root}}`; apagar a pasta `inicio/` e rodar o build.
+
 - Tirar `noindex` do `_src/layout.mjs`.
 - Trocar `WEB3FORMS_ACCESS_KEY` em `_src/pages/contato.html`.
 - Liberar o domínio no kit do Adobe Fonts.

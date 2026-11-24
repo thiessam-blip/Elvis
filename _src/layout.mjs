@@ -55,7 +55,7 @@ ${icons}
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="logo" href="{{root}}" aria-label="Lang'Art, página inicial"><img src="{{root}}assets/svg/logo/logo-simples-vermelho.svg?v=3" alt="Lang'Art" width="196" height="72"></a>
+    <a class="logo" href="{{root}}inicio/" aria-label="Lang'Art, página inicial"><img src="{{root}}assets/svg/logo/logo-simples-vermelho.svg?v=3" alt="Lang'Art" width="196" height="72"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu"><svg class="i"><use href="#i-menu"/></svg><span>Menu</span></button>
     <nav id="menu" class="menu" aria-label="Principal">
       <ul>${nav.map((n) => navItem(n, cur)).join("")}</ul>
