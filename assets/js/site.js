@@ -50,6 +50,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Vídeo que roda com a rolagem
   document.querySelectorAll(".scrolly").forEach((sec) => {
     const video = sec.querySelector("video[data-scrub]");
+    // Sorteia uma das variantes a cada visita (data-variants vem do build)
+    if (video && video.dataset.variants) {
+      try {
+        const vs = JSON.parse(video.dataset.variants);
+        const v = vs[Math.floor(Math.random() * vs.length)];
+        if (v.poster) video.poster = v.poster;
+        video.src = v.src;
+      } catch (e) { /* sem variantes válidas: fica o pôster */ }
+    }
     let target = 0, current = 0, ticking = false;
     const progress = () => {
       const r = sec.getBoundingClientRect();

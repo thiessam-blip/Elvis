@@ -47,15 +47,15 @@ export function layout({ title, desc, body, wa, nav: cur, bodyClass = "", noinde
 <link rel="icon" href="{{root}}assets/svg/logo/monograma-LA-fundo-azul-estrela-vermelha.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
 <link rel="stylesheet" href="https://use.typekit.net/cvd0qmz.css">
-<link rel="stylesheet" href="{{root}}assets/css/site.css">
-<script src="{{root}}assets/js/site.js" defer></script>
+<link rel="stylesheet" href="{{root}}assets/css/site.css?v=3">
+<script src="{{root}}assets/js/site.js?v=3" defer></script>
 </head>
 <body class="${bodyClass}">
 ${icons}
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="logo" href="{{root}}" aria-label="Lang'Art, página inicial"><img src="{{root}}assets/svg/logo/logo-simples-vermelho.svg" alt="Lang'Art" width="132" height="48"></a>
+    <a class="logo" href="{{root}}" aria-label="Lang'Art, página inicial"><img src="{{root}}assets/svg/logo/logo-simples-vermelho.svg?v=3" alt="Lang'Art" width="196" height="72"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu"><svg class="i"><use href="#i-menu"/></svg><span>Menu</span></button>
     <nav id="menu" class="menu" aria-label="Principal">
       <ul>${nav.map((n) => navItem(n, cur)).join("")}</ul>
@@ -70,9 +70,9 @@ ${body}
   <img class="footer-flor" src="{{root}}assets/svg/ornamentos/flor-contorno-vermelho.svg" alt="" aria-hidden="true">
   <div class="wrap footer-grid">
     <div class="footer-about">
-      <img src="{{root}}assets/svg/logo/logo-simples-creme.svg" alt="Lang'Art" width="150" height="54">
+      <img src="{{root}}assets/svg/logo/logo-simples-creme.svg?v=3" class="footer-logo" alt="Lang'Art" width="230" height="84">
       <p>Escola de francês por meio da arte, no Lago Sul. Aula individual ou turma de até 4 alunos, e aula individual on-line.</p>
-      <img class="footer-selo" src="{{root}}assets/svg/passaros/selo-passaro-oval-vermelho.svg" alt="" aria-hidden="true" width="88" height="88">
+      <img class="footer-selo" src="{{root}}assets/svg/passaros/selo-passaro-oval-azulclaro.svg" alt="" aria-hidden="true" width="120" height="108">
     </div>
     <nav aria-label="Rodapé">
       <ul class="footer-links">

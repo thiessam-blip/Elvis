@@ -1,0 +1,195 @@
+- generic [active] [ref=f17e1]:
+  - link "Pular para o conteúdo" [ref=f17e2] [cursor=pointer]:
+    - /url: "#conteudo"
+  - banner [ref=f17e3]:
+    - generic [ref=f17e4]:
+      - link "Lang'Art, página inicial" [ref=f17e5] [cursor=pointer]:
+        - /url: ../
+        - img "Lang'Art" [ref=f17e6]
+      - navigation "Principal" [ref=f17e7]:
+        - list [ref=f17e8]:
+          - listitem [ref=f17e9]:
+            - link "O método" [ref=f17e10] [cursor=pointer]:
+              - /url: ../metodo/
+          - listitem [ref=f17e11]:
+            - link "Cursos" [ref=f17e12] [cursor=pointer]:
+              - /url: ../cursos/
+            - button "Abrir as idades de Cursos" [ref=f17e13] [cursor=pointer]
+          - listitem [ref=f17e16]:
+            - link "Férias e intensivos" [ref=f17e17] [cursor=pointer]:
+              - /url: ../ferias-e-intensivos/
+          - listitem [ref=f17e18]:
+            - link "A Lang'Art" [ref=f17e19] [cursor=pointer]:
+              - /url: ../a-langart/
+          - listitem [ref=f17e20]:
+            - link "Contato" [ref=f17e21] [cursor=pointer]:
+              - /url: ../contato/
+        - link "Consulte horários e valores" [ref=f17e22] [cursor=pointer]:
+          - /url: https://wa.me/5561981327556?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20li%20sobre%20o%20m%C3%A9todo%20e%20quero%20consultar%20hor%C3%A1rios%20e%20valores.
+  - main [ref=f17e23]:
+    - region "Primeiro o francês. Depois, a arte que conversa com ele." [ref=f17e24]:
+      - generic [ref=f17e25]:
+        - generic "Mãos desenham a lápis e pintam com guache na mesa do atelier" [ref=f17e26]
+        - generic [ref=f17e28]:
+          - generic [ref=f17e29]:
+            - paragraph [ref=f17e30]: O método
+            - heading "Primeiro o francês. Depois, a arte que conversa com ele." [level=1] [ref=f17e31]
+          - paragraph [ref=f17e33]: A língua é vivenciada, não apenas ensinada.
+    - region "Como cada aula é pensada" [ref=f17e34]:
+      - generic [ref=f17e35]:
+        - heading "Como cada aula é pensada" [level=2] [ref=f17e36]
+        - paragraph [ref=f17e37]: A Thiessa monta o material sempre na mesma ordem. A gramática vem primeiro, porque é ela que sustenta tudo o que a gente quer dizer.
+        - list [ref=f17e38]:
+          - listitem [ref=f17e39]:
+            - heading "Um conteúdo de francês" [level=3] [ref=f17e40]
+            - paragraph [ref=f17e41]: Quase sempre um tema de gramática, como o verbo être no nível iniciante.
+          - listitem [ref=f17e42]:
+            - heading "Uma experiência artística" [level=3] [ref=f17e43]
+            - paragraph [ref=f17e44]: "Escolhida para dialogar com esse conteúdo: desenho, pintura, música, poema ou outra linguagem."
+          - listitem [ref=f17e45]:
+            - heading "Uma obra de arte como ponto de partida" [level=3] [ref=f17e46]
+            - paragraph [ref=f17e47]: O material traz obras de referência que abrem os exercícios e ampliam o vocabulário.
+    - region "Je suis" [ref=f17e48]:
+      - generic [ref=f17e50]:
+        - img "Pintura de uma menina desenhando o próprio reflexo num espelho oval" [ref=f17e51]
+        - generic [ref=f17e52]:
+          - heading "Je suis…" [level=2] [ref=f17e53]:
+            - text: Je
+            - generic [ref=f17e54]: suis…
+          - paragraph [ref=f17e55]: Eu sou… O autorretrato é a primeira frase em francês.
+    - 'region "Je suis… (eu sou…): como o autorretrato ensina o verbo être" [ref=f17e56]':
+      - generic [ref=f17e57]:
+        - paragraph [ref=f17e58]: Exemplo de aula
+        - 'heading "Je suis… (eu sou…): como o autorretrato ensina o verbo être" [level=2] [ref=f17e59]'
+        - paragraph [ref=f17e60]: O aluno aprende a se apresentar em francês e, ao mesmo tempo, desenha o próprio rosto. Olhos, nariz, boca e cabelo viram vocabulário; as próprias características viram frase.
+        - generic [ref=f17e61]:
+          - figure "A página do material apresenta o verbo e uma obra de referência." [ref=f17e62]:
+            - img "Página do material didático da Lang'Art sobre o verbo être, numa prancheta" [ref=f17e63]
+          - figure "O aluno desenha o rosto e nomeia cada parte em francês." [ref=f17e65]:
+            - img "Mão desenhando um rosto a lápis com linhas de proporção" [ref=f17e66]
+          - figure "As palavras do rosto saem do papel e viram jogo." [ref=f17e68]:
+            - img "Letras de madeira vermelhas formando as palavras bouche e nez ao lado de um retrato pintado" [ref=f17e69]
+    - region "Trabalhos dos alunos" [ref=f17e71]:
+      - generic [ref=f17e72]:
+        - heading "Trabalhos dos alunos" [level=2] [ref=f17e73]
+        - paragraph [ref=f17e74]: Uma pequena seleção do que nasce nas aulas. Os trabalhos aparecem sem o nome completo de quem fez.
+        - generic [ref=f17e75]:
+          - figure "[aluna, 8 anos, se a família autorizar]" [ref=f17e76]:
+            - img "Autorretrato de aluno com as partes do rosto em francês" [ref=f17e77]:
+              - generic [ref=f17e78]: foto real · pedir à escola
+              - generic [ref=f17e79]: trabalho-autorretrato-01
+              - generic [ref=f17e80]: 1:1 · 800×800
+          - figure "[legenda autorizada]" [ref=f17e82]:
+            - img "Trabalho de aluno feito em aula" [ref=f17e83]:
+              - generic [ref=f17e84]: foto real · pedir à escola
+              - generic [ref=f17e85]: trabalho-aluno-02
+              - generic [ref=f17e86]: 1:1 · 800×800
+          - figure "[legenda autorizada]" [ref=f17e88]:
+            - img "Trabalho de aluno feito em aula" [ref=f17e89]:
+              - generic [ref=f17e90]: foto real · pedir à escola
+              - generic [ref=f17e91]: trabalho-aluno-03
+              - generic [ref=f17e92]: 1:1 · 800×800
+          - figure "[legenda autorizada]" [ref=f17e94]:
+            - img "Trabalho de aluno feito em aula" [ref=f17e95]:
+              - generic [ref=f17e96]: foto real · pedir à escola
+              - generic [ref=f17e97]: trabalho-aluno-04
+              - generic [ref=f17e98]: 1:1 · 800×800
+    - region "Nem sempre é desenho" [ref=f17e100]:
+      - generic [ref=f17e101]:
+        - generic [ref=f17e102]:
+          - heading "Nem sempre é desenho" [level=2] [ref=f17e103]
+          - paragraph [ref=f17e104]: Cada tema de gramática pede a sua linguagem. Às vezes é uma pintura, às vezes uma música, um poema ou uma cena de filme.
+          - list [ref=f17e105]:
+            - listitem [ref=f17e106]: Pintura
+            - listitem [ref=f17e107]: Desenho
+            - listitem [ref=f17e108]: Colagem
+            - listitem [ref=f17e109]: Música
+            - listitem [ref=f17e110]: Poema
+            - listitem [ref=f17e111]: Teatro
+            - listitem [ref=f17e112]: Cinema
+        - img "Cavalete de madeira diante de um mural com reproduções de pinturas" [ref=f17e113]
+    - region "Um material feito para cada aluno" [ref=f17e114]:
+      - generic [ref=f17e115]:
+        - img "Material didático da Lang'Art aberto sobre a mesa com lápis de cor e pincéis" [ref=f17e116]
+        - generic [ref=f17e117]:
+          - heading "Um material feito para cada aluno" [level=2] [ref=f17e118]
+          - paragraph [ref=f17e119]: O material didático é criado pela Thiessa e elaborado ou adaptado ao objetivo de quem aprende. Quem quer conversar, por exemplo, recebe um material voltado para a conversa.
+    - region "Não sei desenhar. e agora?" [ref=f17e120]:
+      - generic [ref=f17e121]:
+        - heading "Não sei desenhar. e agora?" [level=2] [ref=f17e122]:
+          - text: Não sei desenhar.
+          - generic [ref=f17e123]: e agora?
+        - paragraph [ref=f17e124]: Não precisa saber. O desenho é um caminho para a língua, não uma prova. Ninguém é avaliado pelo traço; o que conta é o francês que vem junto.
+    - region "Escolha por onde começar" [ref=f17e125]:
+      - generic [ref=f17e126]:
+        - heading "Escolha por onde começar" [level=2] [ref=f17e127]
+        - generic [ref=f17e128]:
+          - link "Consulte horários e valores" [ref=f17e129] [cursor=pointer]:
+            - /url: https://wa.me/5561981327556?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20li%20sobre%20o%20m%C3%A9todo%20e%20quero%20consultar%20hor%C3%A1rios%20e%20valores.
+          - link "Ver as aulas para crianças" [ref=f17e132] [cursor=pointer]:
+            - /url: ../cursos/criancas/
+          - link "Ver as aulas para jovens" [ref=f17e133] [cursor=pointer]:
+            - /url: ../cursos/jovens/
+          - link "Ver as aulas para adultos" [ref=f17e134] [cursor=pointer]:
+            - /url: ../cursos/adultos/
+  - contentinfo [ref=f17e135]:
+    - generic [ref=f17e136]:
+      - generic [ref=f17e137]:
+        - img "Lang'Art" [ref=f17e138]
+        - paragraph [ref=f17e139]: Escola de francês por meio da arte, no Lago Sul. Aula individual ou turma de até 4 alunos, e aula individual on-line.
+      - navigation "Rodapé" [ref=f17e141]:
+        - list [ref=f17e142]:
+          - listitem [ref=f17e143]:
+            - link "O método" [ref=f17e144] [cursor=pointer]:
+              - /url: ../metodo/
+          - listitem [ref=f17e145]:
+            - link "Cursos" [ref=f17e146] [cursor=pointer]:
+              - /url: ../cursos/
+          - listitem [ref=f17e147]:
+            - link "Para crianças" [ref=f17e148] [cursor=pointer]:
+              - /url: ../cursos/criancas/
+          - listitem [ref=f17e149]:
+            - link "Para jovens" [ref=f17e150] [cursor=pointer]:
+              - /url: ../cursos/jovens/
+          - listitem [ref=f17e151]:
+            - link "Para adultos" [ref=f17e152] [cursor=pointer]:
+              - /url: ../cursos/adultos/
+          - listitem [ref=f17e153]:
+            - link "Férias e intensivos" [ref=f17e154] [cursor=pointer]:
+              - /url: ../ferias-e-intensivos/
+          - listitem [ref=f17e155]:
+            - link "A Lang'Art" [ref=f17e156] [cursor=pointer]:
+              - /url: ../a-langart/
+          - listitem [ref=f17e157]:
+            - link "Perguntas frequentes" [ref=f17e158] [cursor=pointer]:
+              - /url: ../perguntas-frequentes/
+          - listitem [ref=f17e159]:
+            - link "Contato" [ref=f17e160] [cursor=pointer]:
+              - /url: ../contato/
+      - generic [ref=f17e161]:
+        - paragraph [ref=f17e162]:
+          - link "WhatsApp (61) 98132-7556" [ref=f17e163] [cursor=pointer]:
+            - /url: https://wa.me/5561981327556?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20li%20sobre%20o%20m%C3%A9todo%20e%20quero%20consultar%20hor%C3%A1rios%20e%20valores.
+        - paragraph [ref=f17e166]: Telefone (61) 3554-[a confirmar]
+        - paragraph [ref=f17e167]:
+          - link "Instagram @langart.ap" [ref=f17e168] [cursor=pointer]:
+            - /url: https://www.instagram.com/langart.ap/
+        - paragraph [ref=f17e169]:
+          - text: QI 21, Lago Sul, Brasília ·
+          - link "Ver no mapa" [ref=f17e170] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/?api=1&query=Lang%27Art+QI+21+Lago+Sul+Bras%C3%ADlia
+        - paragraph [ref=f17e171]: Atendimento [horário a confirmar]
+        - paragraph [ref=f17e172]:
+          - link "Prefere escrever? Use o formulário" [ref=f17e173] [cursor=pointer]:
+            - /url: ../contato/#formulario
+        - paragraph [ref=f17e174]:
+          - text: "Também no atelier: Atelier de Artes, aos sábados."
+          - link "Falar sobre o Atelier de Artes" [ref=f17e175] [cursor=pointer]:
+            - /url: https://wa.me/5561981327556?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20do%20Atelier%20de%20Artes%20aos%20s%C3%A1bados.
+    - generic [ref=f17e176]:
+      - link "Política de privacidade" [ref=f17e177] [cursor=pointer]:
+        - /url: ../privacidade/
+      - generic [ref=f17e178]: © Lang'Art
+  - link "Conversar no WhatsApp" [ref=f17e179] [cursor=pointer]:
+    - /url: https://wa.me/5561981327556?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20li%20sobre%20o%20m%C3%A9todo%20e%20quero%20consultar%20hor%C3%A1rios%20e%20valores.
+    - generic [ref=f17e182]: WhatsApp

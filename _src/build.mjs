@@ -43,11 +43,14 @@ function renderPh(attrs, body, ctx) {
 
   const style = `aspect-ratio:${rw}/${rh}`;
   if (kind === "video") {
-    const file = path.join(ROOT, "assets", "video", `${id}.mp4`);
-    const poster = fs.existsSync(path.join(ROOT, "assets", "img", `${id}-poster.webp`))
-      ? ` poster="${ctx.root}assets/img/${id}-poster.webp"` : "";
-    if (fs.existsSync(file)) {
-      return `<video class="media ${cls}" muted playsinline preload="auto"${poster} aria-label="${esc(alt)}" data-scrub src="${ctx.root}assets/video/${id}.mp4"></video>`;
+    // Variantes sorteadas: assets/video/<id>-01.mp4, -02.mp4… (+ assets/img/<id>-NN-poster.webp).
+    // Para ter mais vídeos basta soltar o próximo número na pasta e rodar o build.
+    const vs = videoVariants(id).map((v) => ({
+      src: `${ctx.root}assets/video/${v}.mp4`,
+      poster: fs.existsSync(path.join(ROOT, "assets", "img", `${v}-poster.webp`)) ? `${ctx.root}assets/img/${v}-poster.webp` : "",
+    }));
+    if (vs.length) {
+      return `<video class="media ${cls}" muted playsinline preload="auto" aria-label="${esc(alt)}" data-scrub data-variants='${JSON.stringify(vs)}'></video>`;
     }
   } else {
     const file = path.join(ROOT, "assets", "img", `${id}.webp`);
@@ -59,6 +62,13 @@ function renderPh(attrs, body, ctx) {
   const tag = { foto: "foto a gerar", arte: "arte a gerar", video: "vídeo a gerar", real: "foto real · pedir à escola" }[kind] || kind;
   return `<div class="ph ph--${kind} ${cls}" role="img" aria-label="${esc(alt)}" style="${style}" data-img="${id}">` +
     `<span class="ph__tag">${tag}</span><span class="ph__id">${id}</span><span class="ph__size">${r.replace("/", ":")} · ${w}×${h}</span></div>`;
+}
+
+function videoVariants(id) {
+  const dir = path.join(ROOT, "assets", "video");
+  if (!fs.existsSync(dir)) return [];
+  const re = new RegExp(`^${id}(-\\d{2})?\\.mp4$`);
+  return fs.readdirSync(dir).filter((f) => re.test(f)).sort().map((f) => f.replace(/\.mp4$/, ""));
 }
 
 function build() {
@@ -94,8 +104,8 @@ function writeManifest() {
   const list = [...manifest.values()].sort((a, b) => a.kind.localeCompare(b.kind) || a.id.localeCompare(b.id));
   fs.writeFileSync(path.join(base, "imagens-manifesto.json"), JSON.stringify(list, null, 2));
   const status = (e) => {
-    const p = e.kind === "video" ? path.join(ROOT, "assets", "video", `${e.id}.mp4`) : path.join(ROOT, "assets", "img", `${e.id}.webp`);
-    return fs.existsSync(p) ? "pronta" : "falta";
+    if (e.kind === "video") { const n = videoVariants(e.id).length; return n ? `pronta (${n} variante${n > 1 ? "s" : ""})` : "falta"; }
+    return fs.existsSync(path.join(ROOT, "assets", "img", `${e.id}.webp`)) ? "pronta" : "falta";
   };
   const rows = list.map((e) => `| \`${e.id}\` | ${e.kind} | ${e.r.replace("/", ":")} | ${e.w}×${e.h} | ${status(e)} | ${e.pages.join(", ")} | ${e.brief || e.alt} |`);
   fs.writeFileSync(path.join(base, "06-imagens-manifesto.md"),
