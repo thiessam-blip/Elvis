@@ -1,0 +1,21 @@
+# Documentos de trabalho (estratégia, briefing, direção de imagem): ficam só na máquina.
+# O repositório é público.
+_base/
+
+# Fotos reais da escola e material bruto nunca sobem.
+_fotos-reais/
+*.psd
+*.ai
+*.raw
+
+# Sistema / OneDrive
+desktop.ini
+Thumbs.db
+.DS_Store
+~$*
+
+# Ferramentas
+node_modules/
+.vscode/
+.idea/
+*.log

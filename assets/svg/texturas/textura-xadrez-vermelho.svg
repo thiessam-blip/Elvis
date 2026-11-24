@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 2437.91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #e8e5dd;
+      }
+
+      .cls-3 {
+        fill: #c23b42;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="-62.75" y="-88.47" width="2069.08" height="2596.66"/>
+    </clipPath>
+  </defs>
+  <g class="cls-4">
+    <rect class="cls-2" x="-62.75" y="-88.47" width="2069.08" height="2596.66"/>
+    <rect class="cls-3" x="133.98" y="-88.47" width="144.56" height="2596.66"/>
+    <rect class="cls-3" x="423.11" y="-88.47" width="236.45" height="2596.66"/>
+    <rect class="cls-3" x="328.24" y="-88.47" width="31.62" height="2596.66"/>
+    <rect class="cls-3" x="698.68" y="-88.47" width="31.62" height="2596.66"/>
+    <rect class="cls-3" x="770.96" y="-88.47" width="31.62" height="2596.66"/>
+    <rect class="cls-3" x="1100.75" y="-1050.24" width="31.62" height="2596.66" transform="translate(868.474 1364.6539) rotate(-90)"/>
+    <rect class="cls-3" x="1100.75" y="-679.8" width="31.62" height="2596.66" transform="translate(498.0276 1735.1002) rotate(-90)"/>
+    <rect class="cls-3" x="1100.75" y="928.48" width="31.62" height="2596.66" transform="translate(-1110.2515 3343.3793) rotate(-90)"/>
+    <rect class="cls-3" x="1100.75" y="-977.96" width="31.62" height="2596.66" transform="translate(796.1917 1436.9361) rotate(-90)"/>
+    <rect class="cls-3" x="1100.75" y="-905.68" width="31.62" height="2596.66" transform="translate(723.9095 1509.2183) rotate(-90)"/>
+  </g>
+</svg>
