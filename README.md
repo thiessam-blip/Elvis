@@ -16,7 +16,7 @@ index.html, metodo/, cursos/, ...   páginas geradas (é isto que vai para a hos
 
 1. Edite a página em `_src/pages/`.
 2. Rode `node _src/build.mjs` na raiz do repositório.
-3. Para ver localmente: `python -m http.server 8765` e abra `http://127.0.0.1:8765/`.
+3. Para ver localmente: `python -m http.server 8765` e abra `http://127.0.0.1:8765/`. Não abra o `index.html` com dois cliques: sem servidor, os links do menu abrem a pasta em vez da página.
 
 ## Imagens
 
@@ -26,7 +26,7 @@ build de novo, a imagem entra sozinha.
 
 ## Antes de publicar
 
-- **Página provisória no ar (desde 2026-11-24):** o `index.html` da raiz é a página "site em construção", feita à mão (fora do build). A home de verdade sai em `inicio/` (fonte `_src/pages/inicio.html`). Para lançar: no cabeçalho de `inicio.html` trocar `"path":"inicio/"` por `"path":""`; no `_src/layout.mjs` e em `obrigado.html` trocar `{{root}}inicio/` por `{{root}}`; apagar a pasta `inicio/` e rodar o build.
+- **No GitHub (online) segue a página "site em construção" (desde 2026-11-24).** Localmente o home já voltou para a raiz (`index.html`) e os commits de acabamento ficam só na máquina, sem push (trava em `.git/hooks/pre-push`). A página provisória está guardada em `_src/em-construcao.html`. Para lançar: apagar a trava (`.git/hooks/pre-push`) e fazer o push.
 
 - Tirar `noindex` do `_src/layout.mjs`.
 - Trocar `WEB3FORMS_ACCESS_KEY` em `_src/pages/contato.html`.

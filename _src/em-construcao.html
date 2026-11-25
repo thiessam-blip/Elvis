@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- Página provisória "site em construção" (2026-11-24).
+     Feita à mão, fora do build: nenhuma página de _src/pages usa o caminho "" enquanto ela existir.
+     A home de verdade está em inicio/ (fonte: _src/pages/inicio.html).
+     Para lançar: voltar o "path" de inicio.html para "", o logo do layout para "{{root}}", rodar o build. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lang'Art · Em breve</title>
+<meta name="description" content="Lang'Art, escola de francês por meio da arte no Lago Sul, Brasília. Nosso site está em construção.">
+<link rel="icon" href="./assets/svg/logo/monograma-LA-fundo-azul-estrela-vermelha.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+<link rel="stylesheet" href="https://use.typekit.net/cvd0qmz.css">
+<link rel="stylesheet" href="./assets/css/site.css?v=3">
+<style>
+  body{ min-height:100vh; min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:2.5rem 1.25rem 2rem; text-align:center; position:relative; overflow:hidden; }
+  .eb{ position:relative; z-index:1; width:100%; max-width:40rem; display:flex; flex-direction:column; align-items:center; }
+  .eb-logo{ width:clamp(150px,30vw,196px); height:auto; margin-bottom:clamp(1.75rem,4vh,2.5rem); }
+  .eb-obra{ position:relative; width:min(100%,19rem); margin-bottom:clamp(1.25rem,3vh,2rem); }
+  .eb-obra .arco{ width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; box-shadow:0 30px 60px -30px rgba(45,96,135,.55); }
+  .eb-obra .brilho{ position:absolute; width:2.4rem; right:-1.1rem; top:18%; }
+  .eb-obra .passaro{ position:absolute; width:5.5rem; left:-4.6rem; top:30%; transform:rotate(-6deg); }
+  .eb .script{ font-size:clamp(2.6rem,7vw,3.4rem); color:var(--vermelho); transform:rotate(-4deg); margin:0 0 .1em; }
+  .eb h1{ font-size:clamp(2.6rem,8vw,4.4rem); line-height:.9; color:var(--azul-escuro); margin:0 0 .45em; }
+  .eb .lead{ margin:0 auto 2rem; max-width:31rem; }
+  .eb .lead strong{ color:var(--preto); font-weight:700; }
+  .eb-contato{ display:flex; flex-wrap:wrap; gap:.75rem; justify-content:center; }
+  .eb-rodape{ position:relative; z-index:1; margin-top:2.75rem; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:var(--texto-2); }
+  .eb-flor{ position:absolute; z-index:0; pointer-events:none; opacity:.55; }
+  .eb-flor--a{ width:clamp(9rem,22vw,16rem); left:-3.5rem; top:-3rem; transform:rotate(-14deg); }
+  .eb-flor--b{ width:clamp(8rem,18vw,13rem); right:-3rem; bottom:-2.5rem; transform:rotate(22deg); }
+  @media (max-width:520px){ .eb-obra .passaro{ left:-1.6rem; top:auto; bottom:10%; width:3.6rem; } .eb-obra .brilho{ right:-.6rem; } }
+  @media (min-width:700px){
+    .eb-obra{ width:min(19rem,24svh); } .eb-logo{ width:170px; margin-bottom:1.5rem; }
+    .eb h1{ font-size:clamp(2.6rem,4.6vw,3.6rem); } .eb .lead{ margin-bottom:1.5rem; } .eb-rodape{ margin-top:2rem; }
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .eb > *{ animation:sobe .9s var(--ease) both; }
+    .eb > *:nth-child(2){ animation-delay:.12s } .eb > *:nth-child(3){ animation-delay:.24s }
+    .eb > *:nth-child(4){ animation-delay:.32s } .eb > *:nth-child(5){ animation-delay:.4s } .eb > *:nth-child(6){ animation-delay:.48s }
+    @keyframes sobe{ from{ opacity:0; transform:translateY(14px) } to{ opacity:1; transform:none } }
+    .eb .script{ animation-name:sobe-script; }
+    @keyframes sobe-script{ from{ opacity:0; transform:translateY(14px) rotate(-4deg) } to{ opacity:1; transform:rotate(-4deg) } }
+  }
+</style>
+</head>
+<body>
+<img class="eb-flor eb-flor--a" src="./assets/svg/ornamentos/flor-azulclaro.svg" alt="" aria-hidden="true">
+<img class="eb-flor eb-flor--b" src="./assets/svg/ornamentos/flor-contorno-vermelho.svg" alt="" aria-hidden="true">
+
+<main class="eb">
+  <img class="eb-logo" src="./assets/svg/logo/logo-simples-vermelho.svg?v=3" alt="Lang'Art" width="196" height="72">
+  <figure class="eb-obra" style="margin-inline:0">
+    <img class="arco" src="./assets/img/arte-atelie-em-construcao.webp" alt="Pintura de um ateliê iluminado, com uma tela no cavalete ainda pela metade" width="896" height="1120" fetchpriority="high">
+    <img class="brilho" src="./assets/svg/ornamentos/brilho-vermelho.svg" alt="" aria-hidden="true">
+    <img class="passaro" src="./assets/svg/passaros/passaro-voando-azulescuro.svg" alt="" aria-hidden="true">
+  </figure>
+  <p class="script">Bienvenue!</p>
+  <h1>Nosso site está em construção</h1>
+  <p class="lead">Bem-vindo à <strong>Lang'Art</strong>. Em breve, aqui vai estar o seu espaço para aprender francês por meio da arte.</p>
+  <div class="eb-contato">
+    <a class="btn btn--primary" href="https://wa.me/5561981327556?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20consultar%20hor%C3%A1rios%20e%20valores." target="_blank" rel="noopener">Fale com a gente no WhatsApp</a>
+    <a class="btn btn--ghost" href="https://www.instagram.com/langart.ap/" target="_blank" rel="noopener">@langart.ap</a>
+  </div>
+</main>
+
+<p class="eb-rodape">Escola de francês por meio da arte · Lago Sul, Brasília</p>
+</body>
+</html>
