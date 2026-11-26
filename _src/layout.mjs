@@ -47,7 +47,7 @@ export function layout({ title, desc, body, wa, nav: cur, bodyClass = "", noinde
 <link rel="icon" href="{{root}}assets/svg/logo/monograma-LA-fundo-azul-estrela-vermelha.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
 <link rel="stylesheet" href="https://use.typekit.net/cvd0qmz.css">
-<link rel="stylesheet" href="{{root}}assets/css/site.css?v=3">
+<link rel="stylesheet" href="{{root}}assets/css/site.css?v=4">
 <script src="{{root}}assets/js/site.js?v=3" defer></script>
 </head>
 <body class="${bodyClass}">

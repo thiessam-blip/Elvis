@@ -25,7 +25,17 @@ const attr = (src, name) => (src.match(new RegExp(`\\b${name}="([^"]*)"`)) || []
 
 const manifest = new Map();
 
+// cls="moldura-<cor>" (azulclaro, azulescuro, vermelho, verde, creme): a imagem entra na janela
+// da moldura barroca da marca (assets/svg/molduras/), em vez do arco.
 function renderPh(attrs, body, ctx) {
+  const inner = renderMedia(attrs, body, ctx);
+  const m = (attr(attrs, "cls") || "").match(/\bmoldura-(\w+)/);
+  if (!m) return inner;
+  return `<div class="moldura moldura--${m[1]}">${inner}` +
+    `<img class="moldura__frame" src="${ctx.root}assets/svg/molduras/moldura-janela-${m[1]}.svg" alt="" aria-hidden="true"></div>`;
+}
+
+function renderMedia(attrs, body, ctx) {
   const id = attr(attrs, "id");
   const r = attr(attrs, "r") || "4/5";
   const w = Number(attr(attrs, "w") || 1200);
