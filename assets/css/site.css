@@ -156,6 +156,8 @@ h3{ font-size:clamp(1.75rem,2.6vw,2.1rem); line-height:1.05; letter-spacing:.03e
 .ficha dl{ margin:0; padding:1rem 1.1rem 0; display:grid; gap:.6rem; }
 .ficha dt{ font-size:.72rem; color:rgba(17,17,17,.6); }
 .ficha dd{ margin:0; font-weight:700; font-size:.85rem; }
+.ficha--curio dd{ font-weight:500; font-size:.8rem; line-height:1.4; }
+.ficha--curio .ficha__t{ font-size:1.6rem; line-height:1; margin-top:.35rem; }
 .pauta{ height:2.25rem; margin:1rem 1.1rem 1rem; background-image:repeating-linear-gradient(to bottom,transparent 0 8px,rgba(210,42,60,.55) 8px 9px); opacity:.8; }
 @media (min-width:768px){ .ficha{ left:-3rem; width:17rem; } }
 

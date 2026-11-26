@@ -81,7 +81,22 @@ function videoVariants(id) {
   return fs.readdirSync(dir).filter((f) => re.test(f)).sort().map((f) => f.replace(/\.mp4$/, ""));
 }
 
+// Vídeos do site, para o preload em segundo plano (todas as páginas).
+// A versão muda quando um arquivo muda, e o navegador troca o cache.
+function siteVideos() {
+  const dir = path.join(ROOT, "assets", "video");
+  if (!fs.existsSync(dir)) return { list: "", ver: "0" };
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".mp4")).sort();
+  let h = 0;
+  for (const f of files) {
+    const st = fs.statSync(path.join(dir, f));
+    for (const c of `${f}:${st.size}:${Math.round(st.mtimeMs)}`) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  }
+  return { list: files.map((f) => f.replace(/\.mp4$/, "")).join(","), ver: h.toString(36) };
+}
+
 function build() {
+  const videos = siteVideos();
   const files = fs.readdirSync(PAGES).filter((f) => f.endsWith(".html"));
   for (const f of files) {
     const src = fs.readFileSync(path.join(PAGES, f), "utf8");
@@ -95,7 +110,7 @@ function build() {
     const ctx = { path: "/" + meta.path, root };
 
     body = body.replace(/<ph\b([^>]*)>([\s\S]*?)<\/ph>/g, (_, a, b) => renderPh(a, b, ctx));
-    const html = layout({ ...meta, body, root, wa: esc(waLink(meta.wa || "Olá! Vim pelo site e quero consultar horários e valores.")) })
+    const html = layout({ ...meta, body, root, videos, wa: esc(waLink(meta.wa || "Olá! Vim pelo site e quero consultar horários e valores.")) })
       .replace(/\{\{wa:([^}]+)\}\}/g, (_, msg) => esc(waLink(msg.trim())))
       .replace(/\{\{wa\}\}/g, esc(waLink(meta.wa || "Olá! Vim pelo site e quero consultar horários e valores.")))
       .replace(/\{\{root\}\}/g, root);

@@ -33,7 +33,7 @@ const navItem = (n, cur) => {
     `<ul class="sub">${sub}</ul></li>`;
 };
 
-export function layout({ title, desc, body, wa, nav: cur, bodyClass = "", noindex }) {
+export function layout({ title, desc, body, wa, nav: cur, bodyClass = "", noindex, videos = { list: "", ver: "0" } }) {
   const fullTitle = title ? `${title} · Lang'Art, francês e arte no Lago Sul` : "Lang'Art · Francês por meio da arte no Lago Sul, Brasília";
   return `<!doctype html>
 <html lang="pt-BR">
@@ -47,10 +47,10 @@ export function layout({ title, desc, body, wa, nav: cur, bodyClass = "", noinde
 <link rel="icon" href="{{root}}assets/svg/logo/monograma-LA-fundo-azul-estrela-vermelha.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
 <link rel="stylesheet" href="https://use.typekit.net/cvd0qmz.css">
-<link rel="stylesheet" href="{{root}}assets/css/site.css?v=4">
-<script src="{{root}}assets/js/site.js?v=3" defer></script>
+<link rel="stylesheet" href="{{root}}assets/css/site.css?v=5">
+<script src="{{root}}assets/js/site.js?v=4" defer></script>
 </head>
-<body class="${bodyClass}">
+<body class="${bodyClass}" data-root="{{root}}" data-videos="${videos.list}" data-vv="${videos.ver}">
 ${icons}
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="site-header">
