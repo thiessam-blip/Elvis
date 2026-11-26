@@ -90,6 +90,7 @@ ${body}
     <div class="footer-contact">
       <p><a href="${wa}" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg> WhatsApp (61) 98132-7556</a></p>
       <p>Telefone <span class="tbc">(61) 3554-[a confirmar]</span></p>
+      <p><a href="mailto:langart@langart.com.br">langart@langart.com.br</a></p>
       <p><a href="https://www.instagram.com/langart.ap/" target="_blank" rel="noopener">Instagram @langart.ap</a></p>
       <p>QI 21, Lago Sul, Brasília · <a href="https://www.google.com/maps/search/?api=1&amp;query=Lang%27Art+QI+21+Lago+Sul+Bras%C3%ADlia" target="_blank" rel="noopener">Ver no mapa</a></p>
       <p>Atendimento <span class="tbc">[horário a confirmar]</span></p>
